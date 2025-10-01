@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Feedback - Beyond Guidance</title>
+    <link rel="icon" type="image/png" href="BGT.png">
+    <link rel="shortcut icon" type="image/png" href="BGT.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Logo Header -->
+    <div class="logo-header">
+        <div class="logo-container">
+            <div class="logo-left">
+                <img src="BGT.png" alt="Beyond Guidance Logo" class="logo-img">
+            </div>
+            <div class="logo-text">
+                <h1 class="logo-title">BEYOND GUIDANCE</h1>
+                <p class="logo-subtitle">An Initiative by Islamic Information Centre</p>
+            </div>
+            <div class="logo-right">
+                <img src="IICT.png" alt="IICT Logo" class="logo-img">
+            </div>
+        </div>
+    </div>
+
+<br>
+    <div class="container">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="header-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h2 class="header-title">Workshop Feedback</h2>
+                <p class="header-subtitle">Help us improve by sharing your experience in Entrpreneurship workshop</p>
+            </div>
+        </header>
+        
+        <div class="form-container">
+            <form id="feedbackForm">
+                <!-- Question 1 -->
+                <div class="form-group" data-aos="fade-up">
+                    <label for="q1" class="required">
+                        <i class="fas fa-star"></i>
+                        1. How satisfied are you with the overall workshop?
+                    </label>
+                    <div class="rating-container" id="q1-rating">
+                        <div class="rating-option" data-value="1">
+                            <div class="rating-circle">
+                                <span>1</span>
+                            </div>
+                            <span class="rating-label">Very Poor</span>
+                        </div>
+                        <div class="rating-option" data-value="2">
+                            <div class="rating-circle">
+                                <span>2</span>
+                            </div>
+                            <span class="rating-label">Poor</span>
+                        </div>
+                        <div class="rating-option" data-value="3">
+                            <div class="rating-circle">
+                                <span>3</span>
+                            </div>
+                            <span class="rating-label">Average</span>
+                        </div>
+                        <div class="rating-option" data-value="4">
+                            <div class="rating-circle">
+                                <span>4</span>
+                            </div>
+                            <span class="rating-label">Good</span>
+                        </div>
+                        <div class="rating-option" data-value="5">
+                            <div class="rating-circle">
+                                <span>5</span>
+                            </div>
+                            <span class="rating-label">Excellent</span>
+                        </div>
+                    </div>
+                    <input type="hidden" id="q1" name="q1" required>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                    <label for="q2" class="required">
+                        <i class="fas fa-check-circle"></i>
+                        2. Did the workshop meet your expectations?
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q2" value="Yes" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Yes</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q2" value="No">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">No</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q2" value="Partially">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Partially</span>
+                        </label>
+                    </div>
+                    <div class="explanation-container">
+                        <textarea id="q2-explanation" name="q2-explanation" placeholder="Please explain your answer (optional)"></textarea>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                    <label for="q3" class="required">
+                        <i class="fas fa-bullseye"></i>
+                        3. How relevant was the workshop content to your entrepreneurial goals?
+                    </label>
+                    <div class="scale-container">
+                        <span class="scale-label">Not relevant</span>
+                        <div class="rating-container" id="q3-rating">
+                            <div class="rating-option" data-value="1">
+                                <div class="rating-circle">
+                                    <span>1</span>
+                                </div>
+                            </div>
+                            <div class="rating-option" data-value="2">
+                                <div class="rating-circle">
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            <div class="rating-option" data-value="3">
+                                <div class="rating-circle">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="rating-option" data-value="4">
+                                <div class="rating-circle">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="rating-option" data-value="5">
+                                <div class="rating-circle">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="scale-label">Very relevant</span>
+                    </div>
+                    <input type="hidden" id="q3" name="q3" required>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                    <label for="q4">
+                        <i class="fas fa-lightbulb"></i>
+                        4. Which session or topic did you find the most useful?
+                    </label>
+                    <div class="input-container">
+                        <textarea id="q4" name="q4" placeholder="Please share which session or topic was most valuable to you..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+                    <label for="q5" class="required">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        5. How would you rate the facilitator's knowledge and delivery style?
+                    </label>
+                    <div class="rating-container" id="q5-rating">
+                        <div class="rating-option" data-value="1">
+                            <div class="rating-circle">
+                                <span>1</span>
+                            </div>
+                            <span class="rating-label">Poor</span>
+                        </div>
+                        <div class="rating-option" data-value="2">
+                            <div class="rating-circle">
+                                <span>2</span>
+                            </div>
+                            <span class="rating-label">Fair</span>
+                        </div>
+                        <div class="rating-option" data-value="3">
+                            <div class="rating-circle">
+                                <span>3</span>
+                            </div>
+                            <span class="rating-label">Good</span>
+                        </div>
+                        <div class="rating-option" data-value="4">
+                            <div class="rating-circle">
+                                <span>4</span>
+                            </div>
+                            <span class="rating-label">Very Good</span>
+                        </div>
+                        <div class="rating-option" data-value="5">
+                            <div class="rating-circle">
+                                <span>5</span>
+                            </div>
+                            <span class="rating-label">Excellent</span>
+                        </div>
+                    </div>
+                    <input type="hidden" id="q5" name="q5" required>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="500">
+                    <label for="q6" class="required">
+                        <i class="fas fa-users"></i>
+                        6. Was the workshop engaging and interactive?
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q6" value="Yes" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Yes</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q6" value="No">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">No</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q6" value="Somewhat">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Somewhat</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="600">
+                    <label for="q7" class="required">
+                        <i class="fas fa-rocket"></i>
+                        7. Do you feel more confident to apply the concepts learned?
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q7" value="Yes" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Yes</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q7" value="No">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">No</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q7" value="Not sure">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Not sure</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="700">
+                    <label for="q8">
+                        <i class="fas fa-graduation-cap"></i>
+                        8. What was the biggest takeaway for you from this workshop?
+                    </label>
+                    <div class="input-container">
+                        <textarea id="q8" name="q8" placeholder="Share your most important learning or insight..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="800">
+                    <label for="q9">
+                        <i class="fas fa-chart-line"></i>
+                        9. What could we improve for future workshops?
+                    </label>
+                    <div class="input-container">
+                        <textarea id="q9" name="q9" placeholder="Your suggestions for improvement..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="900">
+                    <label for="q10" class="required">
+                        <i class="fas fa-share-alt"></i>
+                        10. Would you recommend this workshop to others interested in entrepreneurship?
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q10" value="Yes" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Yes</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q10" value="No">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">No</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q10" value="Maybe">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Maybe</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-container" data-aos="fade-up" data-aos-delay="1000">
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Submit Feedback</span>
+                        <div class="btn-loader">
+                            <div class="loader-spinner"></div>
+                        </div>
+                        <div class="btn-success">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Success Modal -->
+        <div class="modal" id="successModal">
+            <div class="modal-content">
+                <div class="success-animation">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+                <h2>Thank You!</h2>
+                <p>Your feedback has been submitted successfully. We appreciate you taking the time to help us improve our workshops.</p>
+                <button class="modal-btn" id="closeModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- About Us CTA Section -->
+    <section class="about-cta-section">
+        <div class="about-cta-container">
+            <div class="about-cta-content">
+                <h2 class="about-cta-title">Want to Know More About Us?</h2>
+                <p class="about-cta-text">Learn about Islamic Information Centre, our mission, vision, and how you can support our cause.</p>
+                <a href="about.html" class="about-cta-button">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Visit About Us Page</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Top Section with Logos -->
+            <div class="footer-top">
+                <div class="footer-logo-left">
+                    <img src="BGT.png" alt="Beyond Guidance Logo" class="footer-logo-img">
+                </div>
+                <div class="footer-center">
+                    <h2 class="footer-title">BEYOND GUIDANCE</h2>
+                    <p class="footer-tagline">Empowering Entrepreneurs, Building Futures</p>
+                </div>
+                <div class="footer-logo-right">
+                    <img src="IICT.png" alt="IICT Logo" class="footer-logo-img">
+                </div>
+            </div>
+
+            <!-- Footer Content Section -->
+            <div class="footer-content">
+                <!-- Contact Information -->
+                <div class="footer-section">
+                    <h3 class="footer-section-title">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Address
+                    </h3>
+                    <p class="footer-text">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Islamic+Information+Centre+141+3rd+Main+Rd+Kauser+Nagar+Dinnur+Hebbal+Bengaluru+Karnataka+560032" target="_blank" style="text-decoration: none; color: inherit;">
+                            Islamic Information Centre<br>
+                            141, 3rd Main Rd, Kauser Nagar<br>
+                            Dinnur, Hebbal<br>
+                            Bengaluru, Karnataka 560032
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="footer-section">
+                    <h3 class="footer-section-title">
+                        <i class="fas fa-phone-alt"></i>
+                        Contact Us
+                    </h3>
+                    <p class="footer-text">
+                        <i class="fas fa-phone"></i> <a href="tel:+919845289298">+91 9845289298</a>
+                    </p>
+                </div>
+
+                <!-- Email -->
+                <div class="footer-section">
+                    <h3 class="footer-section-title">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </h3>
+                    <p class="footer-text">
+                        <i class="fas fa-envelope"></i> <a href="mailto:info@iicblr.co.in">info@iicblr.co.in</a><br>
+                        <i class="fas fa-envelope"></i> <a href="mailto:beyondguidance.iic@gmail.com">beyondguidance.iic@gmail.com</a>
+                    </p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-section">
+                    <h3 class="footer-section-title">
+                        <i class="fas fa-share-alt"></i>
+                        Follow Us
+                    </h3>
+                    <div class="footer-social">
+                        <a href="https://whatsapp.com/channel/0029Va9dzuyBKfhzEKytbF1X" target="_blank" class="social-icon" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://youtube.com/c/IICBengaluru" target="_blank" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.iicblr.co.in" target="_blank" class="social-icon" aria-label="Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <a href="https://twitter.com/Centreblr" target="_blank" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/iic_bengaluru?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029Va9JOGZAjPXKhikL3r13" target="_blank" class="social-icon" aria-label="Kabir College">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 Beyond Guidance - Islamic Information Centre. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

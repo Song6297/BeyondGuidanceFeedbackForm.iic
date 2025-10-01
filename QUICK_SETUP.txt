@@ -1,0 +1,102 @@
+╔══════════════════════════════════════════════════════════════╗
+║     GOOGLE SHEETS INTEGRATION - QUICK SETUP GUIDE           ║
+║              Workshop Feedback Form                          ║
+╚══════════════════════════════════════════════════════════════╝
+
+📌 STEP-BY-STEP INSTRUCTIONS:
+
+1️⃣  CREATE GOOGLE SHEET
+   → Go to: https://sheets.google.com
+   → Create new blank spreadsheet
+   → Name it: "Workshop Feedback - Beyond Guidance"
+
+2️⃣  OPEN APPS SCRIPT
+   → In Google Sheet: Extensions → Apps Script
+
+3️⃣  PASTE THE CODE
+   → Copy ALL code from: google-apps-script.js
+   → Paste into Apps Script editor
+   → Save (Ctrl+S)
+
+4️⃣  RUN SETUP
+   → Select function: setupSheet
+   → Click Run (▶️)
+   → Authorize when prompted
+   → Check Google Sheet for headers
+
+5️⃣  DEPLOY WEB APP
+   → Click: Deploy → New deployment
+   → Type: Web app
+   → Execute as: Me
+   → Who has access: Anyone
+   → Click Deploy
+   → COPY THE URL (important!)
+
+6️⃣  UPDATE SCRIPT.JS
+   → Open: c:\Users\yasee\BGFEED\script.js
+   → Find line 283:
+     const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+   → Replace with your copied URL
+   → Save file
+
+7️⃣  TEST IT!
+   → Open index.html in browser
+   → Fill and submit form
+   → Check Google Sheet for new row
+
+═══════════════════════════════════════════════════════════════
+
+✅ WHAT YOU'LL SEE IN GOOGLE SHEET:
+
+Column A: Timestamp
+Column B: Q1 - Overall Satisfaction (1-5)
+Column C: Q2 - Met Expectations
+Column D: Q2 - Explanation
+Column E: Q3 - Relevance (1-5)
+Column F: Q4 - Most Useful Session
+Column G: Q5 - Facilitator Rating (1-5)
+Column H: Q6 - Engaging & Interactive
+Column I: Q7 - Confidence to Apply
+Column J: Q8 - Biggest Takeaway
+Column K: Q9 - Improvements
+Column L: Q10 - Would Recommend
+
+═══════════════════════════════════════════════════════════════
+
+🔧 TROUBLESHOOTING:
+
+❌ No data appearing?
+   → Check URL in script.js is correct
+   → Refresh Google Sheet (F5)
+   → Check Apps Script → Executions for errors
+
+❌ Authorization error?
+   → Re-run setupSheet function
+   → Click "Advanced" → "Go to project (unsafe)"
+   → Click "Allow"
+
+❌ Form submits but error?
+   → Check browser console (F12)
+   → Verify Web App deployed as "Anyone"
+
+═══════════════════════════════════════════════════════════════
+
+📱 ACCESS YOUR DATA:
+
+Desktop: Open Google Sheet anytime
+Mobile: Use Google Sheets app
+Share: Click "Share" in Google Sheet
+
+═══════════════════════════════════════════════════════════════
+
+🎯 IMPORTANT NOTES:
+
+• The Web App URL never changes (even after updates)
+• Data is private to your Google account
+• Responses appear instantly in the sheet
+• You can create charts and analyze data
+• Export to Excel/PDF anytime
+
+═══════════════════════════════════════════════════════════════
+
+✨ DONE! Your form is now connected to Google Sheets! ✨
