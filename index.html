@@ -31,7 +31,7 @@
             </div>
             <div class="logo-text">
                 <h1 class="logo-title">BEYOND GUIDANCE</h1>
-                <p class="logo-subtitle">An Initiative by Islamic Information Centre</p>
+                <p class="logo-subtitle">A Series of Workshop by Islamic Information Centre</p>
             </div>
             <div class="logo-right">
                 <img src="IICT.png" alt="IICT Logo" class="logo-img">
@@ -176,8 +176,8 @@
                 <!-- Question 5 -->
                 <div class="form-group" data-aos="fade-up" data-aos-delay="400">
                     <label for="q5" class="required">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                        5. How would you rate the facilitator's knowledge and delivery style?
+                        <i class="fas fa-building"></i>
+                        5. How would you rate the Venue?
                     </label>
                     <div class="rating-container" id="q5-rating">
                         <div class="rating-option" data-value="1">
@@ -217,33 +217,49 @@
                 <!-- Question 6 -->
                 <div class="form-group" data-aos="fade-up" data-aos-delay="500">
                     <label for="q6" class="required">
-                        <i class="fas fa-users"></i>
-                        6. Was the workshop engaging and interactive?
+                        <i class="fas fa-utensils"></i>
+                        6. How was the food?
                     </label>
-                    <div class="radio-group">
-                        <label class="radio-option">
-                            <input type="radio" name="q6" value="Yes" required>
-                            <span class="radio-custom"></span>
-                            <span class="radio-text">Yes</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="q6" value="No">
-                            <span class="radio-custom"></span>
-                            <span class="radio-text">No</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="q6" value="Somewhat">
-                            <span class="radio-custom"></span>
-                            <span class="radio-text">Somewhat</span>
-                        </label>
+                    <div class="rating-container" id="q6-rating">
+                        <div class="rating-option" data-value="1">
+                            <div class="rating-circle">
+                                <span>1</span>
+                            </div>
+                            <span class="rating-label">Poor</span>
+                        </div>
+                        <div class="rating-option" data-value="2">
+                            <div class="rating-circle">
+                                <span>2</span>
+                            </div>
+                            <span class="rating-label">Fair</span>
+                        </div>
+                        <div class="rating-option" data-value="3">
+                            <div class="rating-circle">
+                                <span>3</span>
+                            </div>
+                            <span class="rating-label">Good</span>
+                        </div>
+                        <div class="rating-option" data-value="4">
+                            <div class="rating-circle">
+                                <span>4</span>
+                            </div>
+                            <span class="rating-label">Very Good</span>
+                        </div>
+                        <div class="rating-option" data-value="5">
+                            <div class="rating-circle">
+                                <span>5</span>
+                            </div>
+                            <span class="rating-label">Excellent</span>
+                        </div>
                     </div>
+                    <input type="hidden" id="q6" name="q6" required>
                 </div>
 
                 <!-- Question 7 -->
                 <div class="form-group" data-aos="fade-up" data-aos-delay="600">
                     <label for="q7" class="required">
-                        <i class="fas fa-rocket"></i>
-                        7. Do you feel more confident to apply the concepts learned?
+                        <i class="fas fa-users"></i>
+                        7. Was the workshop engaging and interactive?
                     </label>
                     <div class="radio-group">
                         <label class="radio-option">
@@ -257,54 +273,79 @@
                             <span class="radio-text">No</span>
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="q7" value="Not sure">
+                            <input type="radio" name="q7" value="Somewhat">
                             <span class="radio-custom"></span>
-                            <span class="radio-text">Not sure</span>
+                            <span class="radio-text">Somewhat</span>
                         </label>
                     </div>
                 </div>
 
                 <!-- Question 8 -->
                 <div class="form-group" data-aos="fade-up" data-aos-delay="700">
-                    <label for="q8">
-                        <i class="fas fa-graduation-cap"></i>
-                        8. What was the biggest takeaway for you from this workshop?
+                    <label for="q8" class="required">
+                        <i class="fas fa-rocket"></i>
+                        8. Do you feel more confident to apply the concepts learned?
                     </label>
-                    <div class="input-container">
-                        <textarea id="q8" name="q8" placeholder="Share your most important learning or insight..."></textarea>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="q8" value="Yes" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Yes</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q8" value="No">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">No</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q8" value="Not sure">
+                            <span class="radio-custom"></span>
+                            <span class="radio-text">Not sure</span>
+                        </label>
                     </div>
                 </div>
 
                 <!-- Question 9 -->
                 <div class="form-group" data-aos="fade-up" data-aos-delay="800">
                     <label for="q9">
-                        <i class="fas fa-chart-line"></i>
-                        9. What could we improve for future workshops?
+                        <i class="fas fa-graduation-cap"></i>
+                        9. What was the biggest takeaway for you from this workshop?
                     </label>
                     <div class="input-container">
-                        <textarea id="q9" name="q9" placeholder="Your suggestions for improvement..."></textarea>
+                        <textarea id="q9" name="q9" placeholder="Share your most important learning or insight..."></textarea>
                     </div>
                 </div>
 
                 <!-- Question 10 -->
                 <div class="form-group" data-aos="fade-up" data-aos-delay="900">
-                    <label for="q10" class="required">
+                    <label for="q10">
+                        <i class="fas fa-chart-line"></i>
+                        10. What could we improve for future workshops?
+                    </label>
+                    <div class="input-container">
+                        <textarea id="q10" name="q10" placeholder="Your suggestions for improvement..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Question 11 -->
+                <div class="form-group" data-aos="fade-up" data-aos-delay="1000">
+                    <label for="q11" class="required">
                         <i class="fas fa-share-alt"></i>
-                        10. Would you recommend this workshop to others interested in entrepreneurship?
+                        11. Would you recommend this workshop to others interested in entrepreneurship?
                     </label>
                     <div class="radio-group">
                         <label class="radio-option">
-                            <input type="radio" name="q10" value="Yes" required>
+                            <input type="radio" name="q11" value="Yes" required>
                             <span class="radio-custom"></span>
                             <span class="radio-text">Yes</span>
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="q10" value="No">
+                            <input type="radio" name="q11" value="No">
                             <span class="radio-custom"></span>
                             <span class="radio-text">No</span>
                         </label>
                         <label class="radio-option">
-                            <input type="radio" name="q10" value="Maybe">
+                            <input type="radio" name="q11" value="Maybe">
                             <span class="radio-custom"></span>
                             <span class="radio-text">Maybe</span>
                         </label>
@@ -312,7 +353,7 @@
                 </div>
 
                 <!-- Submit Button -->
-                <div class="submit-container" data-aos="fade-up" data-aos-delay="1000">
+                <div class="submit-container" data-aos="fade-up" data-aos-delay="1100">
                     <button type="submit" class="submit-btn">
                         <span class="btn-text">Submit Feedback</span>
                         <div class="btn-loader">
