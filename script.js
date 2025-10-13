@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupRating('q1-rating', 'q1');
     setupRating('q3-rating', 'q3');
     setupRating('q5-rating', 'q5');
+    setupRating('q6-rating', 'q6');
     
     // Setup form submission
     const form = document.getElementById('feedbackForm');
@@ -159,8 +160,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function setupScrollAnimations() {
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
         };
         
         const observer = new IntersectionObserver((entries) => {
@@ -172,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (entry.target.classList.contains('form-group')) {
                         const delay = entry.target.getAttribute('data-aos-delay') || 0;
                         setTimeout(() => {
-                            entry.target.style.animation = `fadeInUp 0.8s ease-out ${delay}ms both`;
+                            entry.target.style.animation = `fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms both`;
                         }, delay);
                     }
                 }
@@ -272,11 +273,12 @@ document.addEventListener('DOMContentLoaded', function() {
             q3: document.getElementById('q3').value,
             q4: document.getElementById('q4')?.value || '',
             q5: document.getElementById('q5').value,
-            q6: document.querySelector('input[name="q6"]:checked')?.value || '',
+            q6: document.getElementById('q6').value,
             q7: document.querySelector('input[name="q7"]:checked')?.value || '',
-            q8: document.getElementById('q8')?.value || '',
+            q8: document.querySelector('input[name="q8"]:checked')?.value || '',
             q9: document.getElementById('q9')?.value || '',
-            q10: document.querySelector('input[name="q10"]:checked')?.value || ''
+            q10: document.getElementById('q10')?.value || '',
+            q11: document.querySelector('input[name="q11"]:checked')?.value || ''
         };
         
         // Google Apps Script Web App URL
@@ -315,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function validateForm() {
         let isValid = true;
         const requiredFields = [
-            'q1', 'q2', 'q3', 'q5', 'q6', 'q7', 'q10'
+            'q1', 'q2', 'q3', 'q5', 'q6', 'q7', 'q8', 'q11'
         ];
         
         requiredFields.forEach(field => {
